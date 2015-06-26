@@ -17,10 +17,39 @@ namespace models {
       $stmt->execute();
       $result = $stmt->get_result();
 
-      if($result)
+      if($result) {
+
         $return = $result->fetch_assoc();
+      }
+
+      $stmt->close();
 
       return $return;
+    }
+
+
+
+
+    public function edit_user_pw($unid, $password) {
+
+      $db = new \db\db();
+      $conn = $db->get_db_conn();
+
+      $password = password_hash($password, PASSWORD_DEFAULT);
+
+      $stmt = $conn->prepare("UPDATE users SET password = ? WHERE unid = ?");
+      $stmt->bind_param("ss", $password, $unid);
+
+      $error = null;
+
+      if(!$stmt->execute()) {
+
+        $error = $conn->error;
+      }
+
+      $stmt->close();
+
+      return $error;
     }
 
 

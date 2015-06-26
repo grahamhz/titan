@@ -9,7 +9,7 @@ Last Updated: 6.18.15
 
 (function() {
 
-  angular.module('titan', ['ngResource', 'ngRoute'])
+  angular.module('titan', ['ngResource', 'ngRoute', 'ngCookies'])
 
   .config(function($routeProvider, $locationProvider) {
 
@@ -36,6 +36,17 @@ Last Updated: 6.18.15
       });
 
 
+
+  })
+
+  .run(function($rootScope, $cookies) {
+
+    $rootScope.userCookie = {
+      unid: $cookies.get("titan_unid"),
+      token: $cookies.get("titan_token")
+    };
+    //$rootScope.userCookie.unid = $cookies.get("titan_unid");
+    //$rootScope.userCookie.token = $cookies.get("titan_token");
 
   });
 })();

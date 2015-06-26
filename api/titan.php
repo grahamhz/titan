@@ -14,7 +14,6 @@ $titan = new \Slim\Slim(array(
   'log.level' => \Slim\Log::DEBUG
 ));
 
-define('LOGGER', $titan->log);
 $logger = $titan->log;
 
 $titan->get("/main", function() use($logger) {

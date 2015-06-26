@@ -72,7 +72,6 @@ side-navbar elements
 }
 
 
-.side-navgroup-item:hover,
 .side-navgroup-item.active,
 .side-navgroup-item.active:hover {
   border-width: 0 0 0 5px;
@@ -81,9 +80,10 @@ side-navbar elements
   background-color: #EEEEEE;
 }
 
-
-.side-navgroup-item.active {
-  background-color: #FFFFFF;
+.side-navgroup-item:hover {
+  border-width: 0 0 0 5px;
+  border-color: #CC0000;
+  background-color: #EEEEEE !important;
 }
 
 

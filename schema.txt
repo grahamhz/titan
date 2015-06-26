@@ -1,0 +1,7 @@
+users
+	unid - varchar(8);
+	name - varchar(80);
+	password - varchar(255);
+	email - varchar(80);
+	token - varchar(16);
+	token_exp - datetime;

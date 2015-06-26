@@ -1,6 +1,6 @@
 <div id="side-bar" class="col-md-2">
   <div class="side-navgroup list-group">
-    <a href="#!/" class="side-navgroup-item home-navgroup-item list-group-item">home</a>
+    <a href="#!/" class="side-navgroup-item list-group-item">home</a>
     <a href="#!/login" class="side-navgroup-item list-group-item active">log in</a>
     <a href="#" class="side-navgroup-item list-group-item">request access</a>
     <a href="#" class="side-navgroup-item list-group-item">applications</a>
@@ -10,7 +10,7 @@
   </div>
 </div>
 <div id="app-view" class="col-md-10">
-  <div id="login-panel" class="panel panel-primary">
+  <div id="login-panel" class="panel panel-primary" ng-hide="user">
     <div class="panel-body">
       <form id="log-in-form">
         <div class="input-group marg-sm">
@@ -30,6 +30,25 @@
           </div>
         </div>
       </form>
+    </div>
+  </div>
+  <div class="panel panel-primary" ng-show="user">
+    <div class="panel-heading">
+      <h3 class="panel-title">login info</h3>
+    </div>
+    <div class="panel-body">
+      <h2>{{ user.unid }}</h2>
+      <p>{{ user.name }}</p>
+      <p>{{ user.email }}</p>
+    </div>
+  </div>
+  <div class="panel panel-primary" ng-show="userCookie">
+    <div class="panel-heading">
+      <h3 class="panel-title">cookies</h3>
+    </div>
+    <div class="panel-body">
+      <h2>{{ userCookie.unid }}</h2>
+      <p>{{ userCookie.token }}</p>
     </div>
   </div>
 </div>
