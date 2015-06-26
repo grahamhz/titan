@@ -26,10 +26,8 @@ $titan->get("/login", function() {
 });
 
 $titan->post("/login", function() use($titan) {
-
   $login = new \controllers\loginCtrl();
   $login->login($titan->request, $titan->response);
-
 });
 
 $titan->run();
