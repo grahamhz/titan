@@ -1,0 +1,21 @@
+{
+  "name": "titan",
+  "version": "0.0.0",
+  "authors": [
+    "Graham Zuber <gzuber@campusstore.utah.edu>"
+  ],
+  "description": "unified webapp for in-house applications",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "dependencies": {
+    "angular": "~1.4.1",
+    "angular-resource": "~1.4.1",
+    "angular-route": "~1.4.1",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "toastr": "~2.1.1"
+  }
+}

@@ -1,0 +1,35 @@
+<div id="side-bar" class="col-md-2">
+  <div class="side-navgroup list-group">
+    <a href="#!/" class="side-navgroup-item home-navgroup-item list-group-item">home</a>
+    <a href="#!/login" class="side-navgroup-item list-group-item active">log in</a>
+    <a href="#" class="side-navgroup-item list-group-item">request access</a>
+    <a href="#" class="side-navgroup-item list-group-item">applications</a>
+    <a href="#" class="side-navgroup-item list-group-item">webforms</a>
+    <a href="#" class="side-navgroup-item list-group-item">help</a>
+    <a href="#" class="side-navgroup-item list-group-item">report issue</a>
+  </div>
+</div>
+<div id="app-view" class="col-md-10">
+  <div id="login-panel" class="panel panel-primary">
+    <div class="panel-body">
+      <form id="log-in-form">
+        <div class="input-group marg-sm">
+          <span class="input-group-addon">unid</span>
+          <input type="text" ng-model="unid" class="form-control" placeholder="u0000000">
+        </div>
+        <div class="input-group marg-sm">
+          <span class="input-group-addon">password</span>
+          <input type="password" ng-model="password" class="form-control">
+        </div>
+        <div class="centered marg-sm">
+          <div class="btn-primary-border">
+            <button type="submit" ng-click="login(unid, password)" class="btn btn-primary">
+              <span class="btn-text">submit</span>
+              <span class="glyphicon glyphicon-ok btn-glyphicon-right"></span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

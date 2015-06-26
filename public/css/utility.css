@@ -1,0 +1,88 @@
+/*===========
+utility classes
+============*/
+
+
+.centered {
+    text-align: center;
+}
+
+.marg-top-xs {
+  margin-top: .5em;
+}
+
+.marg-top-sm {
+  margin-top: 1em;
+}
+
+.marg-top-md {
+  margin-top: 2em;
+}
+
+.marg-top-lg {
+  margin-top: 3em;
+}
+
+.marg-bot-xs {
+  margin-bottom: .5em;
+}
+
+.marg-bot-sm {
+  margin-bottom: 1em;
+}
+
+.marg-bot-md {
+  margin-bottom: 2em;
+}
+
+.marg-bot-lg {
+  margin-bottom: 3em;
+}
+
+.marg-lef-xs {
+  margin-left: .5em;
+}
+
+.marg-lef-sm {
+  margin-left: 1em;
+}
+
+.marg-lef-md {
+  margin-left: 2em;
+}
+
+.marg-lef-lg {
+  margin-left: 3em;
+}
+
+.marg-rig-xs {
+  margin-right: .5em;
+}
+
+.marg-rig-sm {
+  margin-right: 1em;
+}
+
+.marg-rig-md {
+  margin-right: 2em;
+}
+
+.marg-rig-lg {
+  margin-right: 3em;
+}
+
+.marg-xs {
+  margin: .5em;
+}
+
+.marg-sm {
+  margin: 1em;
+}
+
+.marg-md {
+  margin: 2em;
+}
+
+.marg-lg {
+  margin: 3em;
+}

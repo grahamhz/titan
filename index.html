@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="titan">
+  <head>
+    <title>titan | University of Utah Campus Store</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="public/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" href="public/css/site.css">
+    <link rel="stylesheet" href="public/css/utility.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900">
+    <script type="text/javascript" src="public/vendor/angular/angular.min.js"></script>
+    <script type="text/javascript" src="public/vendor/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="public/vendor/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="public/vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="public/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="public/vendor/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="public/js/titan.js"></script>
+    <script type="text/javascript" src="public/js/controllers/main/titanMainCtrl.js"></script>
+    <script type="text/javascript" src="public/js/controllers/account/titanLoginCtrl.js"></script>
+  </head>
+  <body>
+    <ng-include src="'public/partials/includes/nav/header.html'"></ng-include>
+    <ng-include src="'public/partials/includes/nav/navbar.html'"></ng-include>
+    <div id="main-content" class="container-fluid">
+      <ng-view></ng-view>
+    </div>
+    <footer>
+      <ng-include src="'public/partials/includes/nav/footer.html'"></ng-include>
+    </footer>
+  </body>
+</html>
